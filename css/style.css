@@ -1,6 +1,5 @@
 @font-face {
   font-family: "League Gothic Regular";
-  src: url(../fonts/LeagueGothicRegular/leaguegothic-regular-demo);
   src: url(../fonts/LeagueGothicRegular/leaguegothic-regular-webfont.woff);
   src: url(../fonts/LeagueGothicRegular/leaguegothic-regular-webfont.woff2);
 }
@@ -118,6 +117,7 @@ header {
 
 .blurbs {
   background-image: linear-gradient(to top, #322539 0%, #745083 100%);
+  padding: 80px 0 70px;
 }
 
 
@@ -126,21 +126,27 @@ header {
 
 
 .blurbs__item {
-  display: inline-block;
+  float: left;
   width: 33%;
   color: white;
   padding-left: 60px;
   box-sizing: border-box;
   position: relative;
-  margin-top: 45px;
-  margin-bottom: 70px;
+  padding-right: 10px;
+}
+
+.blurbs__item:last-child{
+  padding-right: 0;
+  padding-left: 70px;
 }
 
 .blurbs__item__title{
   font-size: 30px;
   font-weight: 200;
   margin-bottom: 0;
+  margin-top: -7px;
   font-family: "League Gothic Regular";
+  text-shadow: 0.5px 0.9px 0 #0f1518;
 }
 
 .blurbs__item__icon {
@@ -149,36 +155,36 @@ header {
   height: 30px;
   background: url(../img/blurbs-icons.png);
   position: absolute;
-  top: 37px;
+  top: 0px;
   left: 10px;
 }
+
 .blurbs__item:nth-child(2) .blurbs__item__icon{
   background-position: 60px 0;
-  margin-left: 15px;
-  margin-top: 4px;
 }
+
 .blurbs__item:nth-child(3) .blurbs__item__icon{
   background-position: 28px 0;
-  margin-left: 25px;
-  margin-top: 3px;
+  left: 20px;
 }
 
 .blurbs__item__text {
   font-size: 13pt;
-  margin-top: 5px;
+  margin-top: 6px;
   font-family: "Open Sans";
-  margin-bottom: 42px;
+  text-shadow: 0.5px 0.9px 0 #0f1518;
+  line-height: 24px;
+  font-weight: 300;
 }
 
 .blurbs__item__readmore {
   color: white;
   text-decoration: none;
-  text-align: right;
-  font-size: 14pt;
+  font-size: 19px;
   font-family: "League Gothic Regular";
-  margin-left: 160px;
-  /*margin-top: 20px;*/
-  margin-bottom: 50px;
+  float: right;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  margin-right: 26px;
 }
 
 
@@ -191,36 +197,43 @@ header {
 }
 
 .starts-here {
+  box-sizing: border-box;
   float: left;
   width: 426px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin-bottom: 113px;
   margin-left: 20px;
   color: #454545;
+  padding-top: 28px;
+  padding-left: 42px;
+  padding-right: 38px;
+  padding-bottom: 15px;
 }
 
 .starts-here__photo {
   float:left;
-  margin-top: 18px;
-  margin-left: -24px;
+  margin-top: -11px;
+  margin-left: -63px;
 }
 
 .starts-here__title {
-  /*float: right;*/
   font-family: "League Gothic Regular";
-  margin-bottom: 12px;
-  margin-top: 28px;
-  margin-left: 42px;
   font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  /*margin-bottom: 12px;
+  margin-top: 28px;
+  margin-left: 42px;*/
 }
 
 .starts-here__text {
   font-family: "Open Sans";
-  font-size: 14px;
-  margin-top: 0;
-  margin-left: 39px;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 21px;
+  /*margin-left: 39px;
   margin-right: 43px;
-  margin-bottom: 40px;
+  margin-bottom: 40px;*/
 }
 
 .recent-updates {
@@ -278,83 +291,125 @@ header {
 
 /****************LOGOS********************/
 
+.logos {
+  width: 960px;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 27px;
+  margin-top: 27px;
+}
 
-.logos__pic {
-  margin-top: 73px;
+.logos-wrap {
+  margin-left: 79px;
+}
+
+.logos-wrap:first-child {
+  /*margin-left: 93px;*/
+}
+
+.logo__1 {
+  margin-right: 53px;
+  margin-top: 26px;
+  /*margin-right: 61px;*/
+}
+
+
+/*.logos__pic {
+  margin-top: 28px;
   margin-left: 94px;
   margin-bottom: 26px;
-}
+}*/
+
+/********************LAST SECTION***********************/
 
 
-/*********************FOOTER************************/
-.footer-section {
+
+
+.last-section {
   background-color: #ececec;
   /*font-family: "Open Sans";*/
+  padding: 100px 0;
+  padding-bottom: 55px;
 }
 
-.footer-section__item1 {
-  display: inline-block;
-  width: 25%;
-  margin-right: 58px;
-  margin-bottom: 69px;
+.last-section__item{
+  width: 33%;
+  float: left;
+  padding-right: 30px;
+  padding-left: 22px;
+  box-sizing: border-box;
 }
 
-.footer-section__item1__title {
-  font-size: 48px;
+.last-section__item:first-child{
+  padding-left: 0;
+}
+
+.last-section__item:last-child{
+  padding-right: 0;
+}
+
+.last-section__item__title {
+  font-size: 30px;
   font-family: "League Gothic Regular";
-  margin-top: 92px;
-  margin-left: -2px;
+  text-shadow: 0.5px 0.9px 0 white;
+  margin-top: -5px;
   margin-bottom: 0;
 }
+.last-section__item__title--first{
+  font-size: 48px;
+  text-shadow: 0 1px 0 white;
+  line-height: 48px;
+}
+.last-section__item__title--first span{
+  text-shadow: 0 1px 0 white;
+  color: #b9b9b9;
+}
 
-.footer-section__item1__copyright {
+.last-section__item__copyright {
   font-family: Georgia;
-  font-size: 12pt;
+  font-size: 16px;
   font-style: italic;
-  color: #c8c8c8;
-  margin-top: 9px;
+  color: #c5c5c5;
+  margin-top: 14px;
+  text-shadow: 0.5px 0.9px 0 white;
 }
 
-.footer-section__item1__text {
-  margin-top: -3px;
+.last-section__item__text {
   font-family: "Open Sans";
+  line-height: 24px;
+  text-shadow: 0.5px 0.9px 0 white;
+  margin-top: -8px;
 }
 
-.footer-section__item2 {
-  display: inline-block;
+
+.last-section__item2 {
+  /*display: inline-block;*/
+  float: left;
   width: 25%;
   margin-right: 58px;
 }
 
-.footer-section__item2__title {
+.last-section__item2__title {
   font-size: 22pt;
   font-family: "League Gothic Regular";
   margin-top: 0;
-  margin-left: 33px;
   margin-bottom: 0;
 }
 
-.footer-section__item2__text {
-  margin-left: 17px;
-  margin-top: -13px;
-  font-family: "Open Sans";
-}
 
-.footer-section__item3 {
-  display: inline-block;
+.last-section__item3 {
+  float: left;
+  /*display: inline-block;*/
   width: 33%;
 }
 
-.footer-section__item3__title {
+.last-section__item3__title {
   font-size: 22pt;
   font-family: "League Gothic Regular";
   margin-left: 74px;
   margin-bottom: 0;
-}
-
-.footer-section__item3__text {
-  font-family: "Open Sans";
-  margin-left: 74px;
+  margin-top: 0;
 }
 
 /********************FOOTER********************/
